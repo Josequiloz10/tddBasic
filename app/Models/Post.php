@@ -19,4 +19,10 @@ final class Post extends Model
     {
         return str_replace(' ', '-', $this->name);
     }
+
+    public function href()
+    {
+        return "blog/{$this->slug}";
+    }
+
 }
