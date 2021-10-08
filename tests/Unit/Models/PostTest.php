@@ -7,6 +7,8 @@ use PHPUnit\Framework\TestCase;
 
 class PostTest extends TestCase
 {
+
+    //Mutator
     public function test_set_name_in_lowercase()
     {
         $post = new Post;
@@ -15,6 +17,7 @@ class PostTest extends TestCase
         $this->assertEquals('proyecto en php', $post->name);
     }
 
+    //Accessors
     public function test_get_slug()
     {
         $post = new Post;
